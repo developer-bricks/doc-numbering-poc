@@ -13,7 +13,7 @@ app = FastAPI()
 
 # For local testing keep this as localhost.
 # After Render deployment, replace with your Render URL.
-BASE_URL = os.getenv("BASE_URL", "http://127.0.0.1:8000")
+BASE_URL = os.getenv("BASE_URL", "https://doc-numbering-poc.onrender.com")
 
 class DocumentRequest(BaseModel):
     file_url: str
